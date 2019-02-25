@@ -1,0 +1,30 @@
+{
+	"name": "azure-pipelines-chrome-webstore",
+	"version": "0.1.0",
+	"description": "Chrome Web Store Release Task for Azure Pipelines",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"clean": "rm -r dist/*",
+		"pack": "cd dist;tfx extension create --manifest-globs vss-extension.json"
+	},
+	"author": "Momentum Dashboard Corp.",
+	"license": "MIT",
+	"dependencies": {
+		"azure-pipelines-task-lib": "^2.7.7",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4"
+	},
+	"devDependencies": {
+		"@types/node": "^11.9.5",
+		"@types/q": "^1.5.1",
+		"@types/request-promise": "^4.1.42",
+		"copy-webpack-plugin": "^5.0.0",
+		"tfx-cli": "^0.6.4",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.3.3333",
+		"webpack": "^4.29.5",
+		"webpack-cli": "^3.2.3"
+	}
+}

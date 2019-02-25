@@ -1,0 +1,57 @@
+{
+	"id": "74ecd0ca-4ede-499c-917d-9fc057e58515",
+	"name": "chrome-webstore-get-status",
+	"friendlyName": "Check status on Chrome Web Store",
+	"description": "Check status of an item on Chrome Web Store",
+	"helpMarkDown": "",
+	"category": "Deploy",
+	"visibility": [
+		"Release"
+	],
+	"author": "Momentum Dashboard Corp.",
+	"version": {
+		"Major": 0,
+		"Minor": 1,
+		"Patch": 27
+	},
+	"instanceNameFormat": "Check status on Chrome Web Store",
+	"inputs": [
+		{
+			"name": "itemId",
+			"type": "string",
+			"label": "Item Id",
+			"defaultValue": "",
+			"required": true,
+			"helpMarkDown": "The item Id of the Web Extension on the Chrome Store"
+		},
+		{
+			"name": "clientId",
+			"type": "string",
+			"label": "Client Id",
+			"defaultValue": "",
+			"required": true,
+			"helpMarkDown": "The App Client ID for signing requests.\nExample: 12345678901-1lorum2ipsum3dolor4sit5amet.apps.googleusercontent.com"
+		},
+		{
+			"name": "clientSecret",
+			"type": "string",
+			"label": "Client Secret",
+			"defaultValue": "",
+			"required": true,
+			"helpMarkDown": "The App Client Secret for signing requests.\nExample: a1bcdE2FgHiJ3klMNopQRstU"
+		},
+		{
+			"name": "refreshToken",
+			"type": "string",
+			"label": "Refresh Token",
+			"defaultValue": "",
+			"required": true,
+			"helpMarkDown": "Refresh token for Chrome Web Store API"
+		}
+	],
+	"execution": {
+		"Node": {
+			"target": "bundle.js"
+		}
+	}
+}

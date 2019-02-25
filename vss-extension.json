@@ -1,0 +1,65 @@
+{
+	"manifestVersion": 1,
+	"id": "azure-pipelines-chrome-webstore",
+	"name": "Chrome Web Store",
+	"version": "0.1.27",
+	"publisher": "momentumdash",
+	"targets": [
+		{
+			"id": "Microsoft.VisualStudio.Services"
+		}
+	],
+	"description": "Distribute your Web Extension to the Google Chrome Web Store via the Chrome Web Store API.",
+	"categories": [
+		"Azure Pipelines"
+	],
+	"icons": {
+		"default": "images/chrome-web-store-icon.png"
+	},
+	"files": [
+		{
+			"path": "GetStatus"
+		},
+		{
+			"path": "UpdateItem"
+		},
+		{
+			"path": "PublishItem"
+		}
+	],
+	"contributions": [
+		{
+			"id": "chrome-webstore-get-status",
+			"description": "Check status of an item on Chrome Web Store",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "GetStatus"
+			}
+		},
+		{
+			"id": "chrome-webstore-update-item",
+			"description": "Upload a package to update an existing store item",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "UpdateItem"
+			}
+		},
+		{
+			"id": "chrome-webstore-publish-item",
+			"description": "Publish a package on Chrome Web Store",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "PublishItem"
+			}
+		}
+	]
+}
