@@ -2,7 +2,7 @@
 	"manifestVersion": 1,
 	"id": "azure-pipelines-chrome-webstore",
 	"name": "Chrome Web Store Tools",
-	"version": "0.1.27",
+	"version": "0.1.28",
 	"publisher": "momentumdash",
 	"public": false,
 	"targets": [

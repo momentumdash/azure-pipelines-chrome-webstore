@@ -12,7 +12,7 @@
 	"version": {
 		"Major": 0,
 		"Minor": 1,
-		"Patch": 27
+		"Patch": 28
 	},
 	"instanceNameFormat": "Update a package on Chrome Web Store",
 	"inputs": [

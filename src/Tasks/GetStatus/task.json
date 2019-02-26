@@ -12,7 +12,7 @@
 	"version": {
 		"Major": 0,
 		"Minor": 1,
-		"Patch": 27
+		"Patch": 28
 	},
 	"instanceNameFormat": "Check status on Chrome Web Store",
 	"inputs": [
