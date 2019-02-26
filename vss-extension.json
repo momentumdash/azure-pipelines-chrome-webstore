@@ -1,9 +1,10 @@
 {
 	"manifestVersion": 1,
 	"id": "azure-pipelines-chrome-webstore",
-	"name": "Chrome Web Store",
+	"name": "Chrome Web Store Tools",
 	"version": "0.1.27",
 	"publisher": "momentumdash",
+	"public": false,
 	"targets": [
 		{
 			"id": "Microsoft.VisualStudio.Services"
@@ -15,6 +16,18 @@
 	],
 	"icons": {
 		"default": "images/chrome-web-store-icon.png"
+	},
+	"repository": {
+		"type": "git",
+		"uri": "https://github.com/momentumdash/azure-pipelines-chrome-webstore"
+	},
+	"content": {
+		"details": {
+			"path": "README.md"
+		},
+		"license": {
+			"path": "LICENSE"
+		}
 	},
 	"files": [
 		{
@@ -61,5 +74,15 @@
 				"name": "PublishItem"
 			}
 		}
+	],
+	"tags": [
+		"Chrome",
+		"Google Chrome",
+		"Web Extension",
+		"WebExtensions",
+		"Chrome Extension",
+		"Chrome Web Store",
+		"Chrome Web Store API",
+		"Deploy task"
 	]
 }
