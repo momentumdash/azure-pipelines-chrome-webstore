@@ -21,7 +21,7 @@
 		"@types/q": "^1.5.1",
 		"@types/request-promise": "^4.1.42",
 		"copy-webpack-plugin": "^5.0.0",
-		"tfx-cli": "^0.6.4",
+		"tfx-cli": "^0.12.0",
 		"ts-loader": "^5.3.3",
 		"typescript": "^3.3.3333",
 		"webpack": "^4.29.5",
