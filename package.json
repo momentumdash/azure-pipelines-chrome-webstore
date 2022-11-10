@@ -12,7 +12,7 @@
 	"author": "Momentum Dashboard Corp.",
 	"license": "MIT",
 	"dependencies": {
-		"azure-pipelines-task-lib": "^2.7.7",
+		"azure-pipelines-task-lib": "^4.0.1-preview",
 		"request": "^2.88.0",
 		"request-promise": "^4.2.4"
 	},
